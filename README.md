@@ -8,7 +8,7 @@ You should see two folder client and server. Also a deploy.sh script. With this 
 
 ## Server
 
-### Lets under the server side first.
+### Lets understand the server side first.
 
 It's a NodeJS app which uses Express framework. The App exposes the endpoint: https://<youdomain>/server/api/v1/weather. It's a POST request which accepts the following body: {"lat": "12", "log": "70"}
 
@@ -16,3 +16,7 @@ It's a NodeJS app which uses Express framework. The App exposes the endpoint: ht
 curl -H "Content-Type: application/json" -d '{"lat": "12", "log": "70"}' -X POST https://docker-app-8prqz.ondigitalocean.app/server/api/v1/weather
 
 ```
+
+## Client
+
+The client is a React App which makes POST request to server endpoint and the displays the temperature of your city. This requests location to be on in your browser.

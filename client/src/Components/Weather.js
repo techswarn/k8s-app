@@ -10,8 +10,8 @@ export default function Weather() {
 
   if (flag) {
     navigator.geolocation.getCurrentPosition(function (position) {
-      lat = Math.floor(position.coords.latitude);
-      log = Math.floor(position.coords.longitude);
+      lat = position.coords.latitude;
+      log = position.coords.longitude;
       setCords({ lat: lat, log: log });
     });
     setFlag(false);
