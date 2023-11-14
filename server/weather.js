@@ -1,6 +1,5 @@
 const axios = require("axios");
 const keys = require("./keys");
-console.log(keys.apiKey);
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 const getWeather = async (lat, log) => {

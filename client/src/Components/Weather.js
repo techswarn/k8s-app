@@ -46,7 +46,7 @@ export default function Weather() {
           {load ? (
             <h2>Fetching weather for your location!!!</h2>
           ) : (
-            <h4>Weather in Mangalore: {weather}c</h4>
+            <h4>Weather at your location is: {weather}c</h4>
           )}
         </h2>
       </div>

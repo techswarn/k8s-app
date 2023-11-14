@@ -55,6 +55,11 @@ then
   echo "push to remote server"
   docker push registry.digitalocean.com/swarn-registry/server
   echo "script complete!!"
+elif [ $run_mode = "nobuild" ]
+then
+  echo "Only updating images in Dockerhub"
+  docker push swarntech/client:latest
+  docker push swarntech/server:latest
 fi
 
 

@@ -1,9 +1,6 @@
-const keys = require("./keys");
-
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const redis = require("redis");
 const app = express();
 const weather = require("./weather");
 app.use(cors());
